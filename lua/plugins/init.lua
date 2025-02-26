@@ -8,7 +8,6 @@ return {
       require("plugins.theme").setup()
     end,
   },
-
   -- File finder
   {
     'nvim-telescope/telescope.nvim',
@@ -17,7 +16,6 @@ return {
       require("plugins.telescope").setup()
     end,
   },
-
   -- LSP Support
   {
     'neovim/nvim-lspconfig',
@@ -68,4 +66,25 @@ return {
       require("plugins.diagnostics").setup()
     end
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end,
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
+  }
 }

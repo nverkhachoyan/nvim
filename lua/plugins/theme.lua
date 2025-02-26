@@ -7,6 +7,7 @@ function M.setup()
       light = "latte",
       dark = "mocha",
     },
+    transparent_background = true,
     color_overrides = {
       mocha = {
         base = "#202328",

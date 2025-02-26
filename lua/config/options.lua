@@ -22,3 +22,4 @@ opt.splitbelow = true         -- Put new windows below current
 opt.scrolloff = 8             -- Lines of context
 opt.sidescrolloff = 8         -- Columns of context
 opt.clipboard = 'unnamedplus' -- Use system clipboard
+vim.o.swapfile = false
